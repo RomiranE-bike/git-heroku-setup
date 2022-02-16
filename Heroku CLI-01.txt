@@ -1,0 +1,65 @@
+gitStep-1: Install Heroku CLI
+% brew tap heroku/brew && brew install heroku
+
+Step-2: Create Python Virtual Environment
+% python -m venv foldername
+% source foldername/bin/activate
+% cd foldername
+
+
+Step-3: Install Flask & Gunicorn
+% pip3 install flask gunicorn
+
+
+Step-4: Create an app folder and simple python app
+% mkdir app
+% cd app
+% vi main.py
+
+main.py
+from flask import Flask
+app= Flask(__name__)
+@app.route('/')
+def index():
+  return "<h1>Welcome to CodingX</h1>"
+
+Step-5: Create an entry point to the application, wsgi.py
+% cd ../
+% vi wsgi.py
+
+wsgi.py
+from app.main import app
+if __name__ == "__main__":
+  app.run()
+
+
+Step-6: Run the application in your local system
+% python wsgi.py
+
+
+Step-7: Create requirements.txt and Procfile file
+% pip3 freeze
+% pip3 freeze > requirements.txt
+% vi Procfile
+
+
+Procfile
+web: gunicorn wsgi:app
+
+
+Step-8: Create an app in Heroku
+
+
+Step-9: Deploy your app to heroku
+% heroku login
+% git init
+% heroku git:remote -a eflask-app1400
+% git add.
+% git commit -am "First python app"
+% heroku create eflask-app1400
+% git push heroku master
+% 
+
+Step-10: Open your application on browser
+
+

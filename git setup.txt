@@ -1,0 +1,61 @@
+cd Desktop
+git clone REPOSITORY_HTTPS_ADDRESS
+
+cd /tmp
+/tmp mkdir project
+/temp cd project
+project git init
+
+git init
+
+git touch
+
+# In Linux and Mac
+touch index.html
+
+# In Windows
+echo $null >> index.html
+
+git config --global user.email "YOUR_EMAIL_ADDRESS"
+
+git config --global user.name "YOUR NAME"
+
+git status
+
+ls -ltrh .git
+
+git init
+
+git add . 
+
+git add file.txt or .....
+git add index.html
+
+git commit -m "......"
+
+git commit -m "First Commit"
+git commit -m "Upload simple PWA project on Github" 
+
+git pull origin
+
+git pull origin master
+
+git branch -M master 
+
+git push -u origin master
+git push origin
+
+git remote add origin https://
+
+git remote set-url origin https://
+
+q for refresh bash cmd
+
+gitub>settings>developer settings>personal access tokens
+
+
+
+git push https://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@git@github.com:mesm1749/eflask-app1400.git
+
+git clone https://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@github.com/mesm1749/eflask-app1400.git
+

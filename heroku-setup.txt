@@ -1,0 +1,33 @@
+cd desktop/heroku-test/heroku-test-1400
+
+python -m venv virtual
+
+bash :source virtual/Scripts/activate
+power shell:virtual\Scripts\activate
+
+pip install gunicorn
+pip3 install gunicorn
+
+python -m pip install --upgrade pip
+
+touch Procfile
+
+web: gunicorn  app-name:app
+
+pip freeze > requirements.txt
+
+git init
+
+git add .
+
+git commit -am 'initial commit'
+
+heroku login
+
+ctrl+c
+heroku create
+heroku rename my web site name
+git push heroku master
+
+
+

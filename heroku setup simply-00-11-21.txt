@@ -1,0 +1,24 @@
+git clone https://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@github.com/mesm1749/deployment1400-test1.git
+
+cd deployment1400-test1
+
+heroku create
+
+git push heroku main
+
+
+heroku login
+
+Clone the repository
+Use Git to clone dry-ocean-73232's 
+source code to your local machine.
+
+heroku git:clone -a dry-ocean-73232$ cd dry-ocean-73232
+
+
+Deploy your changes
+Make some changes to the code you just cloned and deploy them to Heroku using Git.
+
+git add .
+git commit -am "make it better"
+git push heroku master

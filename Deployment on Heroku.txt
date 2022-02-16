@@ -1,0 +1,107 @@
+Building a Machine Learning model
+Setting up a Flask web application
+Deployment on Heroku
+
+pip install virtualenv
+
+virtualenv --version
+
+python3 -m venv virtual (Mac)
+py -3 -m venv virtual (Windows)
+
+. virtual/bin/activate (Mac)
+virtual\Scripts\activate (Windows)
+(virtual) <user name> myapp %
+
+pip install Flask
+
+The app.py file
+/Templates
+The index.html file
+
+flask run
+
+pip install gunicorn
+
+Procfile:
+web: gunicorn app:app
+
+pip freeze > requirements.txt
+
+click==8.0.1
+Flask==2.0.1
+gunicorn==20.1.0
+itsdangerous==2.0.1
+Jinja2==3.0.1
+MarkupSafe==2.0.1
+Werkzeug==2.0.1
+pandas
+xgboost
+scikit-learn
+pickle-mixin
+
+Runtime.txt
+
+python -V
+python-3.9.6
+
+heroku login
+
+heroku login -i
+
+git config --global user.name "...."
+
+git config --global user.email .....@example.com
+
+git init
+
+git add .
+git commit -m "............."
+
+heroku create <app-name-you-choose>
+
+git push heroku master
+
+heroku ps:scale web=1
+
+<app-name-you-choose>.herokuapp.com
+
+heroku open
+
+open Heroku on a local server:
+heroku local
+
+A copy of your dyno to have it list the 
+directory contents. This is useful when you 
+add more files and need to 
+check that they have been added on Heroku.:
+
+heroku run 'ls -al'
+
+With this Heroku command, 
+you can access information 
+about your app’s performance 
+once it’s up and running.:
+
+heroku logs --tail
+
+heroku restart
+
+heroku apps:rename <newname>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

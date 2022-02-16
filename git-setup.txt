@@ -1,0 +1,64 @@
+1: create new repo
+2: generate token
+3: mkdir folder
+4: cd folder
+5: git clone https:// token @ git address of repo
+
+git clone https://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@github.com/mesm1749/tse-app1401.git
+
+
+6:
+echo "# eflask-app1401" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:mesm1749/eflask-app1400.git
+git push -u origin main
+
+
+7:copy all file and env to foldr
+
+8: git add .
+git
+9: git commit -am "..."
+
+10: git push -u origin main
+
+11: heroku login
+
+12: git remote -v
+
+
+
+
+
+
+
+
+git:remote -a
+git remote -v
+
+
+
+
+git push heroku master --force
+fetch heroku
+reset --hard heroku/master
+
+git checkout -b main
+git push heroku main
+
+git checkout -b masterbranch
+git push heroku masterbranch
+
+git push heroku master:master
+git push heroku HEAD:master
+
+heroku buildpacks:set heroku/php
+heroku create myapp --buildpack heroku/python
+heroku buildpacks:remove heroku/nodejs
+
+heroku create myapp --buildpack https://github.com/some/buildpack.git
+heroku buildpacks:set https://github.com/some/buildpack.git -a myapp
+heroku buildpacks:clear
